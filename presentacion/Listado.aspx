@@ -12,4 +12,6 @@
             <asp:BoundField HeaderText="Importe" DataField="Importe" />
         </Columns>
     </asp:GridView>
+    <asp:Button ID="btnHoy" Text="Hoy" runat="server"  CssClass="btn btn-info" OnClick="btnHoy_Click"  />
+    <asp:Button ID="btnSemana" Text="Semana" runat="server" CssClass="btn btn-info" OnClick="btnSemana_Click"/>
 </asp:Content>

@@ -16,5 +16,18 @@ namespace presentacion
             dgvTurnos.DataSource = negocio.listar();
             dgvTurnos.DataBind();
         }
+        protected void btnHoy_Click(object sender, EventArgs e)
+        {
+            TurnoNegocio negocio = new TurnoNegocio();
+            dgvTurnos.DataSource = negocio.listarHoy();
+            dgvTurnos.DataBind();
+        }
+
+        protected void btnSemana_Click(object sender, EventArgs e)
+        {
+            TurnoNegocio negocio = new TurnoNegocio();
+            dgvTurnos.DataSource = negocio.listarSemana();
+            dgvTurnos.DataBind();
+        }
     }
 }
